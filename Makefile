@@ -6,6 +6,8 @@ opengl-dependencies:
 
 cpp:
 	sudo apt-get install g++
+code:
+	sudo apt-get install code
 
 code-extensions-cpp:
 	code --install-extension ms-vscode.cpptools ; \
