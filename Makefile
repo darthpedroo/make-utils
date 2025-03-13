@@ -4,6 +4,14 @@ cmake:
 opengl-dependencies:
 	sudo apt install libglfw3-dev libglew-dev libglm-dev libxinerama-dev libxcursor-dev libxi-dev
 
-cplusplus:
+cpp:
 	sudo apt-get install g++
 
+code-extensions-cpp:
+	code --install-extension ms-vscode.cpptools ; \
+	code --install-extension ms-vscode.cpptools-extension-pack ; \
+	code --install-extension twxs.cmake ; \
+	code --install-extension ms-vscode.cpptools-themes ; \
+	code --install-extension ms-vscode.cmake-tools ; \
+
+all: cmake opengl-dependencies cpp code-extensions-cpp
