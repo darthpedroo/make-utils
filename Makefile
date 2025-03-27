@@ -7,7 +7,7 @@ opengl-dependencies:
 cpp:
 	sudo apt-get install g++
 code:
-	sudo apt-get install code
+	sudo snap install code --classic
 
 code-extensions-cpp:
 	code --install-extension ms-vscode.cpptools ; \
@@ -15,5 +15,7 @@ code-extensions-cpp:
 	code --install-extension twxs.cmake ; \
 	code --install-extension ms-vscode.cpptools-themes ; \
 	code --install-extension ms-vscode.cmake-tools ; \
-
-all: cmake opengl-dependencies cpp code-extensions-cpp
+vim:
+	sudo apt install neovim
+	
+all: code code-extensions-cpp 
